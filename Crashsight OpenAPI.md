@@ -51,7 +51,7 @@ Website： https://crashsight.wetest.net
 
 localUserId：You can be obtained in personal information.\
 ![企业微信截图_16937999612475.png](https://data.eolink.com/ENGqJLJ6feb91e37022b13085117d4cb342b0bc78087c33)
-user\_key：OpenAPI Secret Key，example：bec5b56d-7ae7-43f7-8763-51580aed5fa2
+user\_key：OpenAPI Secret Key，example：<YOUR_OPENAPI_SECRET_KEY>
 ![企业微信截图_16938002196859.png](https://data.eolink.com/h9pldCab2a138f87a6f8f5166d94a119749338822823483)
 t: current unix timestamp，example：1618199626
 
@@ -72,7 +72,7 @@ The following method is used to sign the access request:
     ```
 2. Follow the following rules to construct the string for signature calculation using the Canonicalized Query String constructed in the previous step
 3. Encode the HMAC value into a string based on Base64 encoding rules, and you can get the signature value (Signature).
-4. Add the obtained signature value to the request parameters as the Signature parameter. The request signing process is completed，example:&userSecret=ODAxZGE1NmI3NDQ5Nzk0YjEzMjI1ZjJlZGY4NWNmZGE5Mzc4NGZmYjYzMjg4N2M0ODliMTkyZGU0MzBjODdkMw==&localUserId=12453&t=1693818679.
+4. Add the obtained signature value to the request parameters as the Signature parameter. The request signing process is completed，example:&userSecret=<SIGNATURE_VALUE>&localUserId=<LOCAL_USER_ID>&t=1693818679.
 https://crashsight-docs-1258344700.cos.ap-shanghai.myqcloud.com/global/signature.py
 
 ## Error Codes
@@ -96,7 +96,7 @@ download python code example：https://crashsight-docs-1258344700.cos.ap-shangha
 
 ```json
 {
-  "appId": "d98b9f7eec",
+  "appId": "<APP_ID>",
   "platformId": 1,
   "version": "-1",
   "startHour": "2022101404",
@@ -137,10 +137,10 @@ download python code example：https://crashsight-docs-1258344700.cos.ap-shangha
   "preDayVersionCrashUser": 200,
   "topIssueList": [
     {
-      "appId": "d98b9f7eec",
+      "appId": "<APP_ID>",
       "platformId": 1,
       "version": "-1",
-      "issueId": "B0B0C7EAFEF684F2ACCA492E2F194760",
+      "issueId": "<ISSUE_ID>",
       "firstUploadTime": "2021-01-13 14:22:00 671",
       "firstUploadTimestamp": 0,
       "crashUser": 45,
@@ -148,7 +148,7 @@ download python code example：https://crashsight-docs-1258344700.cos.ap-shangha
       "accumulateCrashNum": 511153,
       "accumulateCrashUser": 510012,
       "state": 2,
-      "processors": "100006203",
+      "processors": "<PROCESSOR_HASH>",
       "exceptionName": "java.lang.RuntimeException",
       "exceptionMessage": "yyY9Wfe9uXCw6lgPTmpZ2SECbHoQXT",
       "keyStack": "",
@@ -156,7 +156,7 @@ download python code example：https://crashsight-docs-1258344700.cos.ap-shangha
       "lastUpdateTimestamp": 0,
       "issueVersions": [
         {
-          "version": "1.0.3",
+          "version": "<APP_VERSION>",
           "firstUploadTimestamp": 0,
           "lastUploadTimestamp": 0,
           "count": 0,
@@ -171,10 +171,10 @@ download python code example：https://crashsight-docs-1258344700.cos.ap-shangha
       "tags": []
     },
     {
-      "appId": "d98b9f7eec",
+      "appId": "<APP_ID>",
       "platformId": 1,
       "version": "-1",
-      "issueId": "97CF6DE03A2BCF2A517A1F3AC2A4CF77",
+      "issueId": "<ISSUE_ID>",
       "firstUploadTime": "2021-01-13 14:23:33 958",
       "firstUploadTimestamp": 0,
       "crashUser": 39,
@@ -190,7 +190,7 @@ download python code example：https://crashsight-docs-1258344700.cos.ap-shangha
       "lastUpdateTimestamp": 0,
       "issueVersions": [
         {
-          "version": "1.0.3",
+          "version": "<APP_VERSION>",
           "firstUploadTimestamp": 0,
           "lastUploadTimestamp": 0,
           "count": 0,
@@ -205,10 +205,10 @@ download python code example：https://crashsight-docs-1258344700.cos.ap-shangha
       "tags": []
     },
     {
-      "appId": "d98b9f7eec",
+      "appId": "<APP_ID>",
       "platformId": 1,
       "version": "-1",
-      "issueId": "1CEB50F01DA6EF60A3E7BF62F1A8D4EB",
+      "issueId": "<ISSUE_ID>",
       "firstUploadTime": "2021-01-13 14:22:13 862",
       "firstUploadTimestamp": 0,
       "crashUser": 35,
@@ -216,7 +216,7 @@ download python code example：https://crashsight-docs-1258344700.cos.ap-shangha
       "accumulateCrashNum": 512108,
       "accumulateCrashUser": 510964,
       "state": 1,
-      "processors": "65d156f612ff1eae87ed8baf4f13a620;5e6ae10d50444e2b0a9e697358787297;f19fae6ab0ef7b818fa38480eee15113",
+      "processors": "<PROCESSOR_HASH>",
       "exceptionName": "java.lang.RuntimeException",
       "exceptionMessage": "DmNcPX1JULMgruOClJAzOTWy9zjm01",
       "keyStack": "",
@@ -224,7 +224,7 @@ download python code example：https://crashsight-docs-1258344700.cos.ap-shangha
       "lastUpdateTimestamp": 0,
       "issueVersions": [
         {
-          "version": "1.0.3",
+          "version": "<APP_VERSION>",
           "firstUploadTimestamp": 0,
           "lastUploadTimestamp": 0,
           "count": 0,
@@ -246,10 +246,10 @@ download python code example：https://crashsight-docs-1258344700.cos.ap-shangha
       ]
     },
     {
-      "appId": "d98b9f7eec",
+      "appId": "<APP_ID>",
       "platformId": 1,
       "version": "-1",
-      "issueId": "7A5DD858AC3CF6CBD437DE7F3B6703F4",
+      "issueId": "<ISSUE_ID>",
       "firstUploadTime": "2021-01-13 14:22:23 880",
       "firstUploadTimestamp": 0,
       "crashUser": 31,
@@ -265,7 +265,7 @@ download python code example：https://crashsight-docs-1258344700.cos.ap-shangha
       "lastUpdateTimestamp": 0,
       "issueVersions": [
         {
-          "version": "1.0.3",
+          "version": "<APP_VERSION>",
           "firstUploadTimestamp": 0,
           "lastUploadTimestamp": 0,
           "count": 0,
@@ -280,10 +280,10 @@ download python code example：https://crashsight-docs-1258344700.cos.ap-shangha
       "tags": []
     },
     {
-      "appId": "d98b9f7eec",
+      "appId": "<APP_ID>",
       "platformId": 1,
       "version": "-1",
-      "issueId": "34198E93FED993FFD2A6D0D91DCAFDAE",
+      "issueId": "<ISSUE_ID>",
       "firstUploadTime": "2021-01-13 14:21:57 297",
       "firstUploadTimestamp": 0,
       "crashUser": 25,
@@ -291,7 +291,7 @@ download python code example：https://crashsight-docs-1258344700.cos.ap-shangha
       "accumulateCrashNum": 512851,
       "accumulateCrashUser": 511653,
       "state": 0,
-      "processors": "65d156f612ff1eae87ed8baf4f13a620",
+      "processors": "<PROCESSOR_HASH>",
       "exceptionName": "java.lang.RuntimeException",
       "exceptionMessage": "SRdSbQ3h0XOjLF90pGHvwCu5vZBLwl",
       "keyStack": "",
@@ -299,7 +299,7 @@ download python code example：https://crashsight-docs-1258344700.cos.ap-shangha
       "lastUpdateTimestamp": 0,
       "issueVersions": [
         {
-          "version": "1.0.3",
+          "version": "<APP_VERSION>",
           "firstUploadTimestamp": 0,
           "lastUploadTimestamp": 0,
           "count": 0,
@@ -392,7 +392,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
 
 ```json
 {
-  "appId": "4bd2da9ae1",
+  "appId": "<APP_ID>",
   "platformId": 1,
   "startDate": "20230605",
   "endDate": "20230704",
@@ -431,7 +431,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
 
 ```json
 {
-  "appId": "4bd2da9ae1",
+  "appId": "<APP_ID>",
   "platformId": 1,
   "version": "MERGED",
   "date": "20230605",
@@ -509,7 +509,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
     "message": "OK",
     "data": [
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040818",
@@ -584,13 +584,13 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
 
 ```json
 {
-  "appId": "7786d1a114",
+  "appId": "<APP_ID>",
   "platformId": 1,
   "startHour": "2020060400",
   "endHour": "2020060423",
   "type": "crash",
-  "fsn": "7ff02834-2c46-49eb-a825-99d374388765",
-  "version": "2.7.5.-1",
+  "fsn": "<DEVICE_UUID>",
+  "version": "<APP_VERSION>",
   "dataType": "realTimeTrendData",
   "vm": 0
 }
@@ -623,7 +623,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
     "message": "OK",
     "data": [
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040800",
@@ -633,7 +633,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 0
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040801",
@@ -643,7 +643,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 0
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040802",
@@ -653,7 +653,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 0
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040803",
@@ -663,7 +663,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 0
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040804",
@@ -673,7 +673,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 0
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040805",
@@ -683,7 +683,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 0
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040806",
@@ -693,7 +693,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 0
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040807",
@@ -703,7 +703,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 0
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040808",
@@ -713,7 +713,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 0
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040809",
@@ -723,7 +723,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 0
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040810",
@@ -733,7 +733,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 0
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040811",
@@ -743,7 +743,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 0
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040812",
@@ -753,7 +753,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 0
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040813",
@@ -763,7 +763,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 115041
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040814",
@@ -773,7 +773,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 276739
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040815",
@@ -783,7 +783,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 442173
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040816",
@@ -793,7 +793,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 621881
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040817",
@@ -803,7 +803,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 800755
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040818",
@@ -813,7 +813,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "accessUser": 986791
       },
       {
-        "appId": "a48e55df8b",
+        "appId": "<APP_ID>",
         "platformId": 2,
         "version": "-1",
         "date": "2021040819",
@@ -908,7 +908,7 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
 
 ```json
 {
-  "appId": "a48e55df8b",
+  "appId": "<APP_ID>",
   "platformId": 2,
   "version": "-1",
   "date": "2021040800",
@@ -954,7 +954,7 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
 
 ```json
 {
-  "appId": "f4f1ae20c0",
+  "appId": "<APP_ID>",
   "platformId": 1,
   "type": "crash",
   "vm": 0,
@@ -1003,7 +1003,7 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
     "errorCode": "",
     "data": [
       {
-        "appId": "9f2dcbd9ab",
+        "appId": "<APP_ID>",
         "platformId": 1,
         "version": "NO_STATS_DATA",
         "date": "2023062800",
@@ -1064,12 +1064,12 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
 
 ```json
 {
-  "appId": "7786d1a114",
+  "appId": "<APP_ID>",
   "platformId": 1,
   "type": "crash",
   "limit": 20,
   "topIssueDataType": "unSystemExit",
-  "fsn": "c678c193-7a28-47c6-87aa-b79007152b97",
+  "fsn": "<DEVICE_UUID>",
   "mergeMultipleVersionsWithInaccurateResult": false,
   "countryList": "",
   "versionList": [
@@ -1116,12 +1116,12 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
       "prevDayAccessDevices": 3103,
       "topIssueList": [
         {
-          "appId": "a48e55df8b",
+          "appId": "<APP_ID>",
           "platformId": 2,
           "version": "-1",
           "date": "20210412",
           "type": "crash",
-          "issueId": "A0FD07100BE7F136ABD1E227D44E71ED",
+          "issueId": "<ISSUE_ID>",
           "firstUploadTime": "2021-03-25 11:02:39",
           "crashUser": 808,
           "crashNum": 1662,
@@ -1140,12 +1140,12 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
           "tags": []
         },
         {
-          "appId": "a48e55df8b",
+          "appId": "<APP_ID>",
           "platformId": 2,
           "version": "-1",
           "date": "20210412",
           "type": "crash",
-          "issueId": "EEAC818D4772F4CE35C79920573B3E78",
+          "issueId": "<ISSUE_ID>",
           "firstUploadTime": "2021-04-08 13:26:31",
           "crashUser": 137,
           "crashNum": 274,
@@ -1164,12 +1164,12 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
           "bugs": []
         },
         {
-          "appId": "a48e55df8b",
+          "appId": "<APP_ID>",
           "platformId": 2,
           "version": "-1",
           "date": "20210412",
           "type": "crash",
-          "issueId": "55CC50D414C8F105A6190B4AB06CA543",
+          "issueId": "<ISSUE_ID>",
           "firstUploadTime": "2021-03-25 11:01:38",
           "crashUser": 38,
           "crashNum": 76,
@@ -1268,7 +1268,7 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
 
 ```json
 {
-  "appId": "f4f1ae20c0",
+  "appId": "<APP_ID>",
   "platformId": 1,
   "version": "",
   "versionList": "[\"8.4.1.1.804010199\",\"3.82.1.4\"]",
@@ -1313,7 +1313,7 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
     "errorCode": "",
     "data": [
       {
-        "appId": "f4f1ae20c0",
+        "appId": "<APP_ID>",
         "platformId": 1,
         "version": "MERGED",
         "date": "2023070500",
@@ -1564,7 +1564,7 @@ Website： https://crashsight.wetest.net
 
 ```json
 {
-  "requestid": "4f395abb53e82a1e1f57c7c86feb4cc4",
+  "requestid": "<REQUEST_ID>",
   "code": 200,
   "errmsg": null,
   "data": {
@@ -1573,7 +1573,7 @@ Website： https://crashsight.wetest.net
     "results": [
       {
         "keyName": "*",
-        "model": "魅族 M6",
+        "model": "<DEVICE_MODEL>",
         "osVersion": "Android 4.4.2,level 20",
         "crashNums": 4800,
         "crashUsers": 4800
@@ -1624,7 +1624,7 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
 {
   "stime": "2023-10-02 00:00:00",
   "etime": "2023-10-03 00:00:00",
-  "appId": "d98b9f7ee"
+  "appId": "<APP_ID>"
 }
 ```
 
@@ -1655,7 +1655,7 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
     ],
     "values": [
       [
-        "1178710688500659"
+        "xxxxxxx"
       ]
     ],
     "results": null
@@ -1697,14 +1697,14 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
 
 ```json
 {
-  "requestid": "4f395abb53e82a1e1f57c7c86feb4cc4",
+  "requestid": "<REQUEST_ID>",
   "stime": "2023-10-13 00:00:00",
   "etime": "2023-10-16 00:00:00",
   "params": {
     "keyName": "*"
   },
   "type": "pretty",
-  "appId": "d98b9f7eec"
+  "appId": "<APP_ID>"
 }
 ```
 
@@ -1728,7 +1728,7 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
 
 ```json
 {
-  "requestid": "4f395abb53e82a1e1f57c7c86feb4cc4",
+  "requestid": "<REQUEST_ID>",
   "code": 200,
   "errmsg": "null",
   "data": {
@@ -1810,7 +1810,7 @@ POST /env/uniform/openapi/getCrashDeviceStat/platformId/platformId/signature
 
 ```json
 {
-  "requestid": "4f395abb53e82a1e1f57c7c86feb4cc4",
+  "requestid": "<REQUEST_ID>",
   "code": 200,
   "errmsg": "null",
   "data": {
@@ -1819,12 +1819,12 @@ POST /env/uniform/openapi/getCrashDeviceStat/platformId/platformId/signature
     "results": [
       {
         "exceptionType": "java.lang.NullPointerException",
-        "deviceId": "37138989-52b1-4bcb-8bc2-b750270a1e6c",
-        "issueId": "040920EBBAAAA011B35C8D38429BF4BC",
-        "crashId": "F8E9EFC12593701F6F0BDCDB500D8965",
+        "deviceId": "<DEVICE_UUID>",
+        "issueId": "<ISSUE_ID>",
+        "crashId": "<CRASH_ID>",
         "user": "979878",
-        "hardware": "M2012K10C",
-        "model": "M2012K10C"
+        "hardware": "<DEVICE_MODEL>",
+        "model": "<DEVICE_MODEL>"
       }
     ]
   },
@@ -1900,16 +1900,16 @@ POST /env/uniform/openapi/getCrashDeviceInfo/platformId/platformId/signature
 
 ```json
 {
-  "requestid": "4f395abb53e82a1e1f57c7c86feb4cc4",
+  "requestid": "<REQUEST_ID>",
   "code": 200,
   "errmsg": "null",
   "data": {
     "columns": "null",
     "values": null,
     "results": {
-      "issueId": "53697147EAB75800C7B297549E31EF61",
+      "issueId": "<ISSUE_ID>",
       "crashTime": "2021-11-26 20:52:10 354",
-      "crashId": "3C96296D4312F12ACAF6DEBFC22443AB",
+      "crashId": "<CRASH_ID>",
       "user": "597862998"
     }
   },
@@ -1982,7 +1982,7 @@ POST /env/uniform/openapi/getDeviceUserInfo/platformId/platformId/signature
 
 ```json
 {
-  "requestid": "59c8117e9e470a7e86215f4e91b039e2",
+  "requestid": "<REQUEST_ID>",
   "code": 200,
   "errmsg": null,
   "data": {
@@ -2073,12 +2073,12 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
   "status": 200,
   "ret": [
     {
-      "appId": "3729de3c06",
+      "appId": "<APP_ID>",
       "platformId": 1,
-      "issueIds": "FFF4396D2D997551BC883550B74541B2",
+      "issueIds": "<ISSUE_ID>",
       "note": "mike",
       "createTime": "2021-06-25 09:56:16",
-      "userId": "512466",
+      "userId": "<USER_ID>",
       "newUserId": "",
       "issueStatus": 3,
       "processors": "",
@@ -2140,7 +2140,7 @@ Website： https://crashsight.wetest.net
 {
   "status": 200,
   "ret": {
-    "issueId": "E91CFDD6B0ADF329B3DFC7C7EE0ED952",
+    "issueId": "<ISSUE_ID>",
     "exceptionName": "SIGILL(ILL_ILLOPC)",
     "exceptionMessage": "",
     "keyStack": "#00 pc 0000000002f0248c libUE4.so Reset (D:/SA_Client\\SA\\branches\\obt\\UE4Engine\\Engine\\Source\\Runtime\\Core\\Public\\Containers/SparseArray.h:254) [arm64-v8a]",
@@ -2160,7 +2160,7 @@ Website： https://crashsight.wetest.net
     "ftName": "",
     "issueVersions": [
       {
-        "version": "1.0.1.10002",
+        "version": "<APP_VERSION>",
         "firstUploadTime": "2021-06-15 11:54:36 199",
         "firstUploadTimestamp": 0,
         "lastUploadTime": "2021-06-15 11:54:36 199",
@@ -2248,18 +2248,18 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
   "msg": "成功",
   "data": {
     "userId": null,
-    "processName": "com.tencent.bugly.demo.buglyqq",
+    "processName": "com.example.demo",
     "threadName": "Thread-221(221)",
-    "crashId": "A2844950BA6B2A2D9F42EBC2F1F64E77",
+    "crashId": "<CRASH_ID>",
     "crashHash": "A2:84:49:50:BA:6B:2A:2D:9F:42:EB:C2:F1:F6:4E:77",
     "crashTime": "2020-05-07 18:36:48",
     "uploadTime": "2021-06-11 13:20:12",
-    "bundleId": "com.tencent.bugly.demo.buglyqq",
-    "productVersion": "1.0.3",
+    "bundleId": "com.example.demo",
+    "productVersion": "<APP_VERSION>",
     "startTime": "1588837884696",
     "appInBack": "false",
-    "hardware": "魅族 M6",
-    "modelOriginalName": "魅族 M6",
+    "hardware": "<DEVICE_MODEL>",
+    "modelOriginalName": "<DEVICE_MODEL>",
     "osVersion": "Android 4.4.2,level 20",
     "rom": "fail%2Ffail",
     "cpuName": "fail",
@@ -2330,13 +2330,13 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
 
 ```json
 {
-  "appId": "7786d1a114",
+  "appId": "<APP_ID>",
   "crashDataType": "undefined",
   "start": 0,
   "searchType": "detail",
   "exceptionTypeList": "",
   "platformId": 1,
-  "issueId": "F3B213561B26E0C45A6C397CD77668D9",
+  "issueId": "<ISSUE_ID>",
   "rows": 10,
   "version": ""
 }
@@ -2373,16 +2373,16 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
     "numFound": 1,
     "issueList": [],
     "crashIdList": [
-      "337A2BABD0DBA145C462625FD26BD349"
+      "<CRASH_ID>"
     ],
     "crashDatas": {
-      "337A2BABD0DBA145C462625FD26BD349": {
-        "productVersion": "1297633",
+      "<CRASH_ID>": {
+        "productVersion": "<APP_VERSION>",
         "dumpId": "A9179A653872743CD2A11891B9120",
-        "model": "2c-f0-5d-15-4b-c3",
-        "id": "337A2BABD0DBA145C462625FD26BD349",
+        "model": "<DEVICE_MODEL>",
+        "id": "<CRASH_ID>",
         "uploadTime": "2021-06-17 12:53:22",
-        "crashId": "337A2BABD0DBA145C462625FD26BD349",
+        "crashId": "<CRASH_ID>",
         "osVer": "Microsoft Windows 10-sp0.0",
         "deviceId": "[secret_info]",
         "userId": "[secret_info]"
@@ -2422,7 +2422,7 @@ HTTP Status Code **200**
 |»» issueList|[string]|true|none||none|
 |»» crashIdList|[string]|true|none||none|
 |»» crashDatas|object|true|none||none|
-|»»» 337A2BABD0DBA145C462625FD26BD349|object|true|none||none|
+|»»» <CRASH_ID>|object|true|none||none|
 |»»»» productVersion|string|true|none||none|
 |»»»» dumpId|string|true|none||none|
 |»»»» model|string|true|none||none|
@@ -2476,7 +2476,7 @@ Website： https://crashsight.wetest.net
       {
         "fileName": "log.txt",
         "fileType": 1,
-        "content": "Report: stack frame :2, has cause false\n05-07 17:20:13.626  4883  5108 I CrashReport: try to upload right now\n05-07 17:20:13.626  4883  5108 D CrashReport: Uploading frequency will not be checked if SDK is in debug mode.\n05-07 17:20:13.626  4883  5108 D CrashReport: java.lang.RuntimeException rid:af4470df-c99f-4553-8c64-7c4cc44ecc44 sess:1264696e-5c31-4370-a7ac-f80e08352557 ls:5328s isR:false isF:true isM:false isN:false mc:0 ,null ,isUp:false ,vm:33\n"
+        "content": "Report: stack frame :2, has cause false\n05-07 17:20:13.626  4883  5108 I CrashReport: try to upload right now\n05-07 17:20:13.626  4883  5108 D CrashReport: Uploading frequency will not be checked if SDK is in debug mode.\n05-07 17:20:13.626  4883  5108 D CrashReport: java.lang.RuntimeException rid:<UUID> sess:<UUID> ls:5328s isR:false isF:true isM:false isN:false mc:0 ,null ,isUp:false ,vm:33\n"
       },
       {
         "fileName": "testkey",
@@ -2563,7 +2563,7 @@ Website： https://crashsight.wetest.net
       "Report: stack frame :2, has cause false",
       "05-07 17:20:13.626  4883  5108 I CrashReport: try to upload right now",
       "05-07 17:20:13.626  4883  5108 D CrashReport: Uploading frequency will not be checked if SDK is in debug mode.",
-      "05-07 17:20:13.626  4883  5108 D CrashReport: java.lang.RuntimeException rid:af4470df-c99f-4553-8c64-7c4cc44ecc44 sess:1264696e-5c31-4370-a7ac-f80e08352557 ls:5328s isR:false isF:true isM:false isN:false mc:0 ,null ,isUp:false ,vm:33",
+      "05-07 17:20:13.626  4883  5108 D CrashReport: java.lang.RuntimeException rid:<UUID> sess:<UUID> ls:5328s isR:false isF:true isM:false isN:false mc:0 ,null ,isUp:false ,vm:33",
       "05-07 17:20:13.646  4883  5108 D dalvikvm: GC_FOR_ALLOC freed 494K, 54% free 4512K/9704K, paused 4ms, total 4ms",
       "05-07 17:20:13.646  4883  5108 D CrashReport: [UploadManager] Add upload task (pid=4883 | tid=5108)",
       "05-07 17:20:13.646  4883  5108 D CrashReport: [UploadManager] Sucessfully got session ID, try to execute upload task now (pid=4883 | tid=5108)"
@@ -2628,14 +2628,14 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
   "rspSendTimestamp": 0,
   "numFound": 0,
   "crashMap": {
-    "id": "D8:CA:9E:C4:4F:55:56:E8:2A:01:8B:0B:8A:4C:01:F0",
-    "issueId": "4273DBD3409C2783706F3F15E140F25A",
-    "productVersion": "3.2.5",
-    "model": "魅族 M8",
-    "userId": "Sumxc4c",
+    "id": "<DEVICE_MAC>",
+    "issueId": "<ISSUE_ID>",
+    "productVersion": "<APP_VERSION>",
+    "model": "<DEVICE_MODEL>",
+    "userId": "<USER_ID>",
     "expMessage": "sNSXTvFGp6ZGrorljP6WPxsGtKc5px",
     "type": "100",
-    "processName": "com.tencent.crashsight.demo.crashsightqq",
+    "processName": "com.example.demo",
     "retraceStatus": -3,
     "uploadTime": "2021-04-09T12:21:25.663+0000",
     "uploadTimestamp": 1617970885663,
@@ -2644,16 +2644,16 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
     "mergeVersion": "11",
     "messageVersion": "2",
     "isSystemStack": 1,
-    "rqdUuid": "b1099c1d-41d8-4b44-89e4-ec67bb3dbdf4",
+    "rqdUuid": "<REPORT_UUID>",
     "retraceResult": "1_0_2_0_0_0_0_9_0",
     "appInBack": "false",
     "cpuType": "x86",
-    "subVersionIssueId": "5D7A43A93A533F0A06D4F2C5A8F2CEEF",
-    "crashId": "D8CA9EC44F5556E82A018B0B8A4C01F0",
-    "bundleId": "com.tencent.crashsight.demo.crashsightqq",
+    "subVersionIssueId": "<ISSUE_ID>",
+    "crashId": "<CRASH_ID>",
+    "bundleId": "com.example.demo",
     "sdkVersion": "3.1.7(1.6.0)-3.7.1",
     "osVer": "Android 4.4.2,level 16",
-    "expAddr": "com.tencent.crashsight.demo.MainActivity$11$2.run(MainActivity.java:529)",
+    "expAddr": "com.example.demo.MainActivity$11$2.run(MainActivity.java:529)",
     "threadName": "Thread-221(221)",
     "memSize": "1587986432",
     "diskSize": "33999818752",
@@ -2682,7 +2682,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
     "crashCount": 0,
     "isRooted": "true",
     "isVirtualMachine": 320,
-    "modelOriginalName": "魅族 M8"
+    "modelOriginalName": "<DEVICE_MODEL>"
   },
   "detailMap": {
     "attatchCount": 0,
@@ -2698,7 +2698,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
     "archVersion": null,
     "attachName": "valueMapOthers.txt;log.txt;",
     "tel": null,
-    "id": "D8:CA:9E:C4:4F:55:56:E8:2A:01:8B:0B:8A:4C:01:F0",
+    "id": "<DEVICE_MAC>",
     "fileList": [
       {
         "fileName": "valueMapOthers.txt",
@@ -2710,7 +2710,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "fileName": "log.txt",
         "codeType": 0,
         "fileType": 1,
-        "fileContent": "Report: stack frame :2, has cause false\n05-07 17:20:13.626  4883  5108 I CrashReport: try to upload right now\n05-07 17:20:13.626  4883  5108 D CrashReport: Uploading frequency will not be checked if SDK is in debug mode.\n05-07 17:20:13.626  4883  5108 D CrashReport: java.lang.RuntimeException rid:af4470df-c99f-4553-8c64-7c4cc44ecc44 sess:1264696e-5c31-4370-a7ac-f80e08352557 ls:5328s isR:false isF:true isM:false isN:false mc:0 ,null ,isUp:false ,vm:33"
+        "fileContent": "Report: stack frame :2, has cause false\n05-07 17:20:13.626  4883  5108 I CrashReport: try to upload right now\n05-07 17:20:13.626  4883  5108 D CrashReport: Uploading frequency will not be checked if SDK is in debug mode.\n05-07 17:20:13.626  4883  5108 D CrashReport: java.lang.RuntimeException rid:<UUID> sess:<UUID> ls:5328s isR:false isF:true isM:false isN:false mc:0 ,null ,isUp:false ,vm:33"
       },
       {
         "fileName": "main(1)",
@@ -2746,7 +2746,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "fileName": "Thread-220(220)",
         "codeType": 0,
         "fileType": 2,
-        "fileContent": "com.tencent.crashsight.demo.MainActivity$11$2.run(MainActivity.java:529)\njava.lang.Thread.run(Thread.java:841)\n"
+        "fileContent": "com.example.demo.MainActivity$11$2.run(MainActivity.java:529)\njava.lang.Thread.run(Thread.java:841)\n"
       },
       {
         "fileName": "testkey",
@@ -2758,11 +2758,11 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
         "fileName": "APP_ID",
         "codeType": 0,
         "fileType": 7,
-        "fileContent": "a81f9c7e38"
+        "fileContent": "<APP_ID>"
       }
     ],
     "email": null,
-    "srcIp": "203.205.141.39",
+    "srcIp": "<DEVICE_IP>",
     "uploadTimestamp": 1617970885663,
     "productIdentity": null,
     "freeSdCard": 0,
@@ -2773,7 +2773,7 @@ download python code example: https://crashsight-docs-1258344700.cos.ap-shanghai
     "userKey": "testkey;",
     "romName": "fail%2Ffail",
     "threadName": null,
-    "contactAll": "D8CA9EC44F5556E82A018B0B8A4C01F0",
+    "contactAll": "<CONTACT_HASH>",
     "sdkId": null,
     "callStack": "irgMyesZayrR",
     "fileDir": null,
@@ -2947,7 +2947,7 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
 {
   "status": 200,
   "ret": {
-    "appId": "a81f9c7e38",
+    "appId": "<APP_ID>",
     "platformId": "1",
     "issueList": [
       {
@@ -2956,7 +2956,7 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
         "exceptionMessage": "sNSXTvFGp6ZGrorljP6WPxsGtKc5px",
         "keyStack": "",
         "lastestUploadTime": "2021-04-09 20:21:25 663",
-        "issueId": "4273DBD3409C2783706F3F15E140F25A",
+        "issueId": "<ISSUE_ID>",
         "imeiCount": 596,
         "processor": "",
         "status": 0,
@@ -2966,7 +2966,7 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
         "ftName": "",
         "issueVersions": [
           {
-            "version": "3.2.5",
+            "version": "<APP_VERSION>",
             "firstUploadTime": null,
             "firstUploadTimestamp": 0,
             "lastUploadTime": null,
@@ -3056,9 +3056,9 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
     "data": {
       "versionList": [
         {
-          "appId": "3729de3c06",
+          "appId": "<APP_ID>",
           "platformId": 1,
-          "productVersion": "1.0.3",
+          "productVersion": "<APP_VERSION>",
           "enable": 1,
           "isShow": true,
           "enableAutoUpgrade": false,
@@ -3067,7 +3067,7 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
       ],
       "tagList": [
         {
-          "appId": "3729de3c06",
+          "appId": "<APP_ID>",
           "platformId": 1,
           "tagId": 2099,
           "tagName": "哈哈哈哈哈",
@@ -3076,243 +3076,243 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
       ],
       "processorList": [
         {
-          "appId": "3729de3c06",
+          "appId": "<APP_ID>",
           "platformId": 1,
           "type": 1,
-          "userId": "380b6196b8bd21ed08137900a5d05816",
+          "userId": "<USER_ID>",
           "registerTime": "2020-08-31 04:40:01",
           "logoUrl": "",
           "wechat": "",
           "email": "",
           "phone": "",
           "isShow": "true",
-          "qqNickName": "4648",
-          "name": "terryxdguan",
-          "newUserId": "4648",
+          "qqNickName": "<USER_ID>",
+          "name": "<USER_NAME>",
+          "newUserId": "<USER_ID>",
           "isOperator": 0
         },
         {
-          "appId": "3729de3c06",
+          "appId": "<APP_ID>",
           "platformId": 1,
           "type": 1,
-          "userId": "13cb4423f7f014cb6ba25eb359fe617a",
+          "userId": "<USER_ID>",
           "registerTime": "2020-08-31 03:36:54",
           "logoUrl": "",
           "wechat": "",
           "email": "",
           "phone": "",
           "isShow": "true",
-          "qqNickName": "4646",
-          "name": "wenqing",
-          "newUserId": "4646",
+          "qqNickName": "<USER_ID>",
+          "name": "<USER_NAME>",
+          "newUserId": "<USER_ID>",
           "isOperator": 0
         },
         {
-          "appId": "3729de3c06",
+          "appId": "<APP_ID>",
           "platformId": 1,
           "type": 1,
-          "userId": "6adbbc0a85517d9723e5b615ec67e33b",
+          "userId": "<USER_ID>",
           "registerTime": "2021-01-19 18:58:33",
           "logoUrl": "",
           "wechat": "",
           "email": "",
           "phone": "",
           "isShow": "true",
-          "qqNickName": "4789",
-          "name": "4789",
-          "newUserId": "4789",
+          "qqNickName": "<USER_ID>",
+          "name": "<USER_NAME>",
+          "newUserId": "<USER_ID>",
           "isOperator": 0
         },
         {
-          "appId": "3729de3c06",
+          "appId": "<APP_ID>",
           "platformId": 1,
           "type": 1,
-          "userId": "84fcb6d8e604ae9895bd3fb2065db516",
+          "userId": "<USER_ID>",
           "registerTime": "2021-05-13 14:43:02",
           "logoUrl": "",
           "wechat": "",
           "email": "",
           "phone": "",
           "isShow": "true",
-          "qqNickName": "9863",
-          "name": "cyfan",
-          "newUserId": "9863",
+          "qqNickName": "<USER_ID>",
+          "name": "<USER_NAME>",
+          "newUserId": "<USER_ID>",
           "isOperator": 0
         },
         {
-          "appId": "3729de3c06",
+          "appId": "<APP_ID>",
           "platformId": 1,
           "type": 2,
-          "userId": "10175",
+          "userId": "<USER_ID>",
           "registerTime": "2021-01-27 14:36:37",
           "logoUrl": "",
           "wechat": "",
           "email": "",
           "phone": "",
           "isShow": "true",
-          "qqNickName": "4845",
-          "name": "4845",
-          "newUserId": "4845",
+          "qqNickName": "<USER_ID>",
+          "name": "<USER_NAME>",
+          "newUserId": "<USER_ID>",
           "isOperator": 1
         },
         {
-          "appId": "3729de3c06",
+          "appId": "<APP_ID>",
           "platformId": 1,
           "type": 2,
-          "userId": "324c0ec5fe73b0c6975638a85ebf0773",
+          "userId": "<USER_ID>",
           "registerTime": "2020-11-23 14:26:10",
           "logoUrl": "",
           "wechat": "",
           "email": "",
           "phone": "",
           "isShow": "true",
-          "qqNickName": "4719",
-          "name": "joyfyzhang",
-          "newUserId": "4719",
+          "qqNickName": "<USER_ID>",
+          "name": "<USER_NAME>",
+          "newUserId": "<USER_ID>",
           "isOperator": 1
         },
         {
-          "appId": "3729de3c06",
+          "appId": "<APP_ID>",
           "platformId": 1,
           "type": 2,
-          "userId": "742edb9b769273ef6b10467dcfed6bad",
+          "userId": "<USER_ID>",
           "registerTime": "2020-10-15 07:08:31",
           "logoUrl": "",
           "wechat": "",
           "email": "",
           "phone": "",
           "isShow": "true",
-          "qqNickName": "4681",
-          "name": "awencao",
-          "newUserId": "4681",
+          "qqNickName": "<USER_ID>",
+          "name": "<USER_NAME>",
+          "newUserId": "<USER_ID>",
           "isOperator": 1
         },
         {
-          "appId": "3729de3c06",
+          "appId": "<APP_ID>",
           "platformId": 1,
           "type": 2,
-          "userId": "392641",
+          "userId": "<USER_ID>",
           "registerTime": "2021-04-27 16:23:53",
           "logoUrl": "",
           "wechat": "",
           "email": "",
           "phone": "",
           "isShow": "true",
-          "qqNickName": "9798",
-          "name": "腾讯云-Junehi",
-          "newUserId": "9798",
+          "qqNickName": "<USER_ID>",
+          "name": "<USER_NAME>",
+          "newUserId": "<USER_ID>",
           "isOperator": 1
         },
         {
-          "appId": "3729de3c06",
+          "appId": "<APP_ID>",
           "platformId": 1,
           "type": 2,
-          "userId": "155f4b2450d2f1c81205d18b893e5779",
+          "userId": "<USER_ID>",
           "registerTime": "2021-01-19 18:36:36",
           "logoUrl": "",
           "wechat": "",
           "email": "",
           "phone": "",
           "isShow": "true",
-          "qqNickName": "4788",
-          "name": "nakewang",
-          "newUserId": "4788",
+          "qqNickName": "<USER_ID>",
+          "name": "<USER_NAME>",
+          "newUserId": "<USER_ID>",
           "isOperator": 1
         },
         {
-          "appId": "3729de3c06",
+          "appId": "<APP_ID>",
           "platformId": 1,
           "type": 2,
-          "userId": "18310c25f92c4636f78d291e3d66dd2e",
+          "userId": "<USER_ID>",
           "registerTime": "2020-08-31 03:37:27",
           "logoUrl": "",
           "wechat": "",
           "email": "",
           "phone": "",
           "isShow": "true",
-          "qqNickName": "4647",
-          "name": "wenqingwu(RTX)",
-          "newUserId": "4647",
+          "qqNickName": "<USER_ID>",
+          "name": "<USER_NAME>",
+          "newUserId": "<USER_ID>",
           "isOperator": 1
         },
         {
-          "appId": "3729de3c06",
+          "appId": "<APP_ID>",
           "platformId": 1,
           "type": 2,
-          "userId": "475431",
+          "userId": "<USER_ID>",
           "registerTime": "2021-06-08 17:41:56",
           "logoUrl": "",
           "wechat": "",
           "email": "",
           "phone": "",
           "isShow": "true",
-          "qqNickName": "10148",
-          "name": "10148",
-          "newUserId": "10148",
+          "qqNickName": "<USER_ID>",
+          "name": "<USER_NAME>",
+          "newUserId": "<USER_ID>",
           "isOperator": 1
         },
         {
-          "appId": "3729de3c06",
+          "appId": "<APP_ID>",
           "platformId": 1,
           "type": 2,
-          "userId": "d744be487a860ee7655198dcfdcf6d90",
+          "userId": "<USER_ID_HASH>",
           "registerTime": "2021-06-07 11:59:33",
           "logoUrl": "",
           "wechat": "",
-          "email": "p_pkkliu@tencent.com",
+          "email": "<USER_EMAIL>@example.com",
           "phone": "",
           "isShow": "true",
-          "qqNickName": "10085",
-          "name": "腾讯云-刘科",
-          "newUserId": "10085",
+          "qqNickName": "<USER_ID>",
+          "name": "<USER_NAME>",
+          "newUserId": "<USER_ID>",
           "isOperator": 1
         },
         {
-          "appId": "3729de3c06",
+          "appId": "<APP_ID>",
           "platformId": 1,
           "type": 2,
-          "userId": "653506",
+          "userId": "<USER_ID>",
           "registerTime": "2021-06-07 12:11:25",
           "logoUrl": "",
           "wechat": "",
           "email": "",
           "phone": "",
           "isShow": "true",
-          "qqNickName": "10086",
-          "name": "10086",
-          "newUserId": "10086",
+          "qqNickName": "<USER_ID>",
+          "name": "<USER_NAME>",
+          "newUserId": "<USER_ID>",
           "isOperator": 1
         },
         {
-          "appId": "3729de3c06",
+          "appId": "<APP_ID>",
           "platformId": 1,
           "type": 2,
-          "userId": "708772",
+          "userId": "<USER_ID>",
           "registerTime": "2021-06-07 11:57:28",
           "logoUrl": "",
           "wechat": "",
           "email": "",
           "phone": "",
           "isShow": "true",
-          "qqNickName": "10084",
-          "name": "腾讯云-xiongma",
-          "newUserId": "10084",
+          "qqNickName": "<USER_ID>",
+          "name": "<USER_NAME>",
+          "newUserId": "<USER_ID>",
           "isOperator": 1
         },
         {
-          "appId": "3729de3c06",
+          "appId": "<APP_ID>",
           "platformId": 1,
           "type": 2,
-          "userId": "709724",
+          "userId": "<USER_ID>",
           "registerTime": "2021-06-09 14:33:12",
           "logoUrl": "",
           "wechat": "",
           "email": "",
           "phone": "",
           "isShow": "true",
-          "qqNickName": "10157",
-          "name": "10157",
-          "newUserId": "10157",
+          "qqNickName": "<USER_ID>",
+          "name": "<USER_NAME>",
+          "newUserId": "<USER_ID>",
           "isOperator": 1
         }
       ],
@@ -3322,8 +3322,8 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
         "1101"
       ],
       "bundleIdList": [
-        "com.tencent.crashsight.demo.glyj",
-        "com.tencent.crashsight.demo.qq"
+        "com.example.demo",
+        "com.example.demo"
       ]
     }
   }
@@ -3395,7 +3395,7 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
 
 ```json
 {
-  "requestid": "4f395abb53e82a1e1f57c7c86feb4cc4",
+  "requestid": "<REQUEST_ID>",
   "stime": "2021-12-26 00:00:00",
   "etime": "2021-12-27 00:00:00",
   "appId": "xxx",
@@ -3430,7 +3430,7 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
 
 ```json
 {
-  "requestid": "4f395abb53e82a1e1f57c7c86feb4cc4",
+  "requestid": "<REQUEST_ID>",
   "code": 200,
   "errmsg": null,
   "data": {
@@ -3438,15 +3438,15 @@ download python code example:https://crashsight-docs-1258344700.cos.ap-shanghai.
     "values": null,
     "results": [
       {
-        "issueId": "53697147EAB75800C7B297549E31EF61",
+        "issueId": "<ISSUE_ID>",
         "crashTime": "2021-11-26 20:52:10 354",
-        "crashId": "3C96296D4312F12ACAF6DEBFC22443AB",
+        "crashId": "<CRASH_ID>",
         "user": "597862998"
       },
       {
-        "issueId": "2D28D10DB4F7FA0E05B30578BA98436A",
+        "issueId": "<ISSUE_ID>",
         "crashTime": "2021-11-26 11:23:04 385",
-        "crashId": "58626B94F85D3588F46C41AF59E443A0",
+        "crashId": "<CRASH_ID>",
         "user": "osewR0lNantT5rywYITNayOep-wA"
       }
     ]
